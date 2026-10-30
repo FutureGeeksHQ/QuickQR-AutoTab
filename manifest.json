@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "QuickQR \u2014 Real-Time QR Generator",
+  "version": "1.2.0",
+  "description": "Generate QR codes automatically from the active tab, text, Wi-Fi, email, and phone data.",
+  "permissions": [
+    "tabs",
+    "sidePanel"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Open QuickQR"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

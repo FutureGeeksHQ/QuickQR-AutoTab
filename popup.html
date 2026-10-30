@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>QuickQR</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">QR</div>
+        <div>
+          <h1>QuickQR</h1>
+          <p>Real-time QR generator</p>
+        </div>
+      </div>
+      <button id="currentTabBtn" class="icon-btn" title="Use current tab URL">↗</button>
+    </header>
+
+    <section class="type-row" aria-label="QR type">
+      <button class="type active" data-type="url">URL</button>
+      <button class="type" data-type="text">Text</button>
+      <button class="type" data-type="wifi">Wi-Fi</button>
+      <button class="type" data-type="email">Email</button>
+      <button class="type" data-type="phone">Phone</button>
+    </section>
+
+    <section id="fields" class="fields"></section>
+
+    <section class="preview-card">
+      <div id="qr" class="qr"></div>
+      <p id="emptyState">Start typing to generate your QR code.</p>
+    </section>
+
+    <div class="actions">
+      <button id="downloadPng" class="primary">Download PNG</button>
+      <button id="copyText" class="secondary">Copy data</button>
+    </div>
+
+    <footer>
+      <span id="status">Ready</span>
+      <span>Runs locally</span>
+    </footer>
+  </main>
+
+  <script src="qrcode.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
