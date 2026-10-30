@@ -2,7 +2,7 @@
 
 Manifest V3 Chrome extension with a persistent Side Panel.
 
-## What changed in v1.1
+## What changed in v1.0.0
 
 - The QR tool now lives in Chrome's Side Panel.
 - Open it once, then switch tabs normally.
@@ -14,14 +14,12 @@ Manifest V3 Chrome extension with a persistent Side Panel.
 Chrome 114+ supports the MV3 Side Panel API.
 
 ## Install
-
-1. Put `qrcode.min.js` in this folder.
-2. Open `chrome://extensions`.
-3. Enable Developer mode.
-4. Click Load unpacked.
-5. Select this folder.
-6. Click the QuickQR toolbar icon once to open the Side Panel.
-7. Switch between tabs. The URL and QR update automatically.
+1. Open `chrome://extensions`.
+2. Enable Developer mode.
+3. Click Load unpacked.
+4. Select this folder.
+5. Click the QuickQR toolbar icon once to open the Side Panel.
+6. Switch between tabs. The URL and QR update automatically.
 
 ## Important
 
